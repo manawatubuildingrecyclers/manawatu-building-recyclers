@@ -1,0 +1,29 @@
+{
+  "name": "manawatu-building-recyclers",
+  "version": "1.0.0",
+  "description": "This is the code for the Manawatu Building Recyclers website.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "npm run scss-compile",
+    "scss-compile": "node-sass -rw static/scss -o static/css",
+    "watch": "npm run scss-compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hayleyavw/manawatu-building-recyclers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hayleyavw/manawatu-building-recyclers/issues"
+  },
+  "homepage": "https://github.com/hayleyavw/manawatu-building-recyclersh#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "scss-compile": "^0.1.7"
+  }
+}
