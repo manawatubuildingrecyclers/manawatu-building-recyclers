@@ -8,7 +8,7 @@ html {
 }
 */
 body {
-  margin: 20px 60px 10px 60px; }
+  margin: 10px 10vw; }
 
 h1 {
   font-size: 2.5rem;
@@ -18,7 +18,8 @@ h2 {
   color: #e69c00; }
 
 h3 {
-  font-size: 2rem; }
+  font-size: 1rem;
+  margin: 0px; }
 
 a {
   color: #e69c00; }
@@ -39,22 +40,36 @@ header {
 #hero {
   width: 100vw;
   margin-top: -50px;
-  margin-left: -60px;
+  margin-left: -10vw;
   z-index: -1; }
 
-section #example-stock-photos #three-images {
+#intro #intro-text {
   display: flex;
   justify-content: space-between; }
-  section #example-stock-photos #three-images .individual-image {
+  #intro #intro-text .intro-element {
+    flex-basis: 30%;
+    justify-content: space-between; }
+    #intro #intro-text .intro-element .intro-element-heading {
+      display: flex;
+      align-items: center; }
+      #intro #intro-text .intro-element .intro-element-heading img {
+        margin-right: 20px;
+        width: auto;
+        height: 50px; }
+
+#example-stock-photos #three-images {
+  display: flex;
+  justify-content: space-between; }
+  #example-stock-photos #three-images .individual-image {
     height: 35vh;
     margin: 2px; }
-    section #example-stock-photos #three-images .individual-image .stock-image {
+    #example-stock-photos #three-images .individual-image .stock-image {
       height: 100%;
       width: 100%;
       object-fit: cover;
       margin: 2px; }
 
-section #example-stock-photos #example-stock-text {
+#example-stock-photos #example-stock-text {
   text-align: center;
   margin: -46px 0px 0px 4px;
   padding: 4px;
@@ -62,15 +77,15 @@ section #example-stock-photos #example-stock-text {
   opacity: 0.6;
   color: #FFF; }
 
-section #contact-content {
+#contact #contact-content {
   display: flex;
   justify-content: space-between; }
-  section #contact-content #contact-text .contact-element {
+  #contact #contact-content #contact-text .contact-element {
     margin: 20px 0; }
-    section #contact-content #contact-text .contact-element p {
+    #contact #contact-content #contact-text .contact-element p {
       margin: 1px; }
 
-section #about-content img {
+#about-content img {
   height: 200px;
   width: auto;
   float: left;
@@ -79,14 +94,14 @@ section #about-content img {
 footer {
   text-align: center;
   width: 100vw;
-  margin-left: -60px;
+  margin-left: -10vw;
   background-color: #C3C6CC;
   padding-top: 5px; }
-  footer #website-attribution {
+  footer .attribution {
     background-color: #FFF; }
-    footer #website-attribution p {
+    footer .attribution p {
       font-size: 0.7rem;
       margin: 0px;
       padding-top: 4px; }
-    footer #website-attribution a {
+    footer .attribution a {
       color: #000; }

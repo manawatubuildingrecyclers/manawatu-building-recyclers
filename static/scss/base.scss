@@ -1,5 +1,6 @@
 $orange: #e69c00;
 $main-font: 'Roboto', sans-serif;
+$body-left-margin: -10vw;
 
 html {
   background-color: #f9f9f9;
@@ -13,7 +14,7 @@ html {
 */
 
 body {
-    margin: 20px 60px 10px 60px;
+    margin: 10px 0-$body-left-margin;
 }
 
 h1 {
@@ -26,7 +27,8 @@ h2 {
 }
 
 h3 {
-	font-size: 2rem;
+    font-size: 1rem;
+    margin: 0px;
 }
 
 a {
@@ -53,35 +55,60 @@ header {
 #hero {
 	width: 100vw;
 	margin-top: -50px;
-	margin-left: -60px;
+	margin-left: $body-left-margin;
 	z-index: -1;
 }
 
-section {
-	#example-stock-photos {
-		#three-images {
-			display: flex;
+#intro {
+	#intro-text {
+		display: flex;
+		justify-content: space-between;
+		.intro-element {
+			flex-basis: 30%;
 			justify-content: space-between;
-			.individual-image {
-				height: 35vh;
-				margin: 2px;
-				.stock-image {
-					height: 100%;
-					width: 100%;
-					object-fit: cover;
-					margin: 2px;
+			.intro-element-heading {
+				display: flex;
+				align-items: center;
+				img {
+					margin-right: 20px;
+					width: auto;
+					height: 50px;
 				}
 			}
-		}
-		#example-stock-text {
-			text-align: center;
-			margin: -46px 0px 0px 4px;
-			padding: 4px;
-			background-color: #C3C6CC;
-			opacity: 0.6;
-			color: #FFF;
+			.intro-element-text {
+				// flex-grow: 0;
+				// flex-basis: 60%;
+			}
 		}
 	}
+}
+
+#example-stock-photos {
+	#three-images {
+		display: flex;
+		justify-content: space-between;
+		.individual-image {
+			height: 35vh;
+			margin: 2px;
+			.stock-image {
+				height: 100%;
+				width: 100%;
+				object-fit: cover;
+				margin: 2px;
+			}
+		}
+	}
+	#example-stock-text {
+		text-align: center;
+		margin: -46px 0px 0px 4px;
+		padding: 4px;
+		background-color: #C3C6CC;
+		opacity: 0.6;
+		color: #FFF;
+	}
+}
+
+#contact {
 	#contact-content {
 		display: flex;
 		justify-content: space-between;
@@ -94,23 +121,24 @@ section {
 			}
 		}
 	}
-	#about-content {
-		img {
-			height: 200px;
-			width: auto;
-			float: left;
-			margin: 0 10px 10px 0;
-		}
+}
+
+#about-content {
+	img {
+		height: 200px;
+		width: auto;
+		float: left;
+		margin: 0 10px 10px 0;
 	}
 }
 
 footer {
 	text-align: center;
 	width: 100vw;
-	margin-left: -60px;
+	margin-left: $body-left-margin;
 	background-color: #C3C6CC;
 	padding-top: 5px;
-	#website-attribution {
+	.attribution {
 		background-color: #FFF;
 		p {
 			font-size: 0.7rem;
