@@ -91,6 +91,7 @@ section {
 		.intro-element {
 			display: flex;
 			justify-content: space-evenly;
+			align-items: center;
 			margin: 20px 0 20px 0;
 			.intro-element-heading {
 				display: flex;
@@ -123,6 +124,7 @@ section {
 		.individual-image {
 			height: 35vh;
 			margin: 4px;
+			width: 33%;
 			.stock-image {
 				height: 100%;
 				width: 100%;
