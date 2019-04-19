@@ -1,6 +1,7 @@
 html {
   background-color: #f9f9f9;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth; }
 
 /*#viewer {
 	width: 100vw;
@@ -15,7 +16,10 @@ h1 {
   margin: 5px; }
 
 h2 {
-  color: #e69c00; }
+  color: #e69c00;
+  text-align: left; }
+  h2#subtitle {
+    text-align: center !important; }
 
 h3 {
   font-size: 1rem;
@@ -25,8 +29,15 @@ a {
   color: #e69c00; }
 
 header {
+  transition: all .5s linear;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-evenly;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 100vw;
+  margin-left: -10vw; }
   header img {
     height: 150px;
     width: auto;
@@ -36,69 +47,99 @@ header {
     margin: 5px; }
     header nav a {
       margin: 10px; }
+  header.shrink {
+    background-color: #f9f9f9;
+    transition: all .5s linear;
+    border-bottom: 1px solid #e69c00; }
+    header.shrink img {
+      height: 75px;
+      transition: all .5s linear; }
 
 #hero {
   width: 100vw;
   margin-top: -50px;
   margin-left: -10vw;
-  z-index: -1; }
+  z-index: -1;
+  border-top: 2px solid #e69c00;
+  border-bottom: 2px solid #e69c00; }
+
+section {
+  margin-bottom: 30px; }
 
 #intro #intro-text {
   display: flex;
-  justify-content: space-between; }
+  flex-direction: column; }
   #intro #intro-text .intro-element {
-    flex-basis: 30%;
-    justify-content: space-between; }
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0 20px 0; }
     #intro #intro-text .intro-element .intro-element-heading {
       display: flex;
-      align-items: center; }
+      flex-direction: column;
+      align-items: center;
+      margin-right: 20px; }
       #intro #intro-text .intro-element .intro-element-heading img {
-        margin-right: 20px;
-        width: auto;
-        height: 50px; }
+        width: 50px;
+        height: auto; }
+    #intro #intro-text .intro-element .intro-element-text {
+      flex-basis: 80%;
+      text-align: center; }
 
-#example-stock-photos #three-images {
-  display: flex;
-  justify-content: space-between; }
-  #example-stock-photos #three-images .individual-image {
-    height: 35vh;
-    margin: 2px; }
-    #example-stock-photos #three-images .individual-image .stock-image {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      margin: 2px; }
-
-#example-stock-photos #example-stock-text {
-  text-align: center;
-  margin: -46px 0px 0px 4px;
-  padding: 4px;
-  background-color: #C3C6CC;
-  opacity: 0.6;
-  color: #FFF; }
+#example-stock-photos {
+  width: 100vw;
+  margin-left: -10vw; }
+  #example-stock-photos #three-images {
+    display: flex;
+    justify-content: space-between; }
+    #example-stock-photos #three-images .individual-image {
+      height: 35vh;
+      margin: 4px; }
+      #example-stock-photos #three-images .individual-image .stock-image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border: 2px solid #e69c00; }
+  #example-stock-photos #example-stock-text {
+    text-align: center;
+    margin: -30px 0px 0px 4px;
+    padding: 4px;
+    background-color: #C3C6CC;
+    opacity: 0.6;
+    color: #FFF; }
 
 #contact #contact-content {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-content: center; }
   #contact #contact-content #contact-text .contact-element {
     margin: 20px 0; }
     #contact #contact-content #contact-text .contact-element p {
       margin: 1px; }
+  #contact #contact-content iframe {
+    border: 2px solid #e69c00 !important; }
 
 #about-content img {
   height: 200px;
   width: auto;
   float: left;
-  margin: 0 10px 10px 0; }
+  margin: 0 10px 10px 0;
+  border: 2px solid #e69c00; }
+
+#about-content p {
+  font-size: 1rem; }
 
 footer {
   text-align: center;
   width: 100vw;
   margin-left: -10vw;
   background-color: #C3C6CC;
-  padding-top: 5px; }
+  padding-top: 5px;
+  border-top: 2px solid #e69c00; }
+  footer #icon-attribution {
+    font-size: 0.7rem; }
   footer .attribution {
-    background-color: #FFF; }
+    background-color: #FFF;
+    border-top: 2px solid #e69c00; }
     footer .attribution p {
       font-size: 0.7rem;
       margin: 0px;
