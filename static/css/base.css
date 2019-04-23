@@ -56,6 +56,8 @@ header {
 
 #hero {
   width: 100vw;
+  height: 70vh;
+  object-fit: cover;
   margin-left: -10vw;
   z-index: -1;
   border-top: 2px solid #e69c00;

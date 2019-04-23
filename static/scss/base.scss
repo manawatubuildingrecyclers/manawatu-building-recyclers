@@ -74,6 +74,8 @@ header {
 
 #hero {
 	width: 100vw;
+	height: 70vh;
+	object-fit: cover;
 	margin-left: $body-left-margin;
 	z-index: -1;
 	border-top: 2px solid $orange;
