@@ -20,10 +20,10 @@
   },
   "homepage": "https://github.com/hayleyavw/manawatu-building-recyclersh#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "node-sass": "^4.13.1"
   },
   "devDependencies": {
-    "node-sass": "^4.11.0",
     "scss-compile": "^0.1.7"
   }
 }
