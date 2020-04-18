@@ -54,7 +54,7 @@ header {
     header nav a {
       margin: 10px; }
 
-#hero {
+#hero-wrapper #hero-image {
   width: 100vw;
   height: 70vh;
   object-fit: cover;
@@ -62,6 +62,26 @@ header {
   z-index: -1;
   border-top: 2px solid #e69c00;
   border-bottom: 2px solid #e69c00; }
+
+#hero-wrapper #hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  margin: 0;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  opacity: 0.9; }
+  #hero-wrapper #hero-text h3 {
+    text-align: center; }
+  #hero-wrapper #hero-text #hero-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #hero-wrapper #hero-text #hero-heading #warning-icon {
+      height: 32px;
+      margin-right: 10px; }
 
 section {
   margin-bottom: 30px; }
@@ -122,6 +142,33 @@ section {
       margin: 1px; }
   #contact-section #contact-content iframe {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+
+#contact-section #contact-form .form-element {
+  display: flex;
+  width: 100%;
+  margin: 10px 0; }
+  #contact-section #contact-form .form-element label {
+    flex-basis: 30%; }
+  #contact-section #contact-form .form-element input, #contact-section #contact-form .form-element textarea {
+    flex-basis: 100%;
+    border-radius: 1px;
+    border: 1px solid #e69c00;
+    padding: 2px;
+    font-size: 16px;
+    font-family: 'Courier', 'monospace'; }
+  #contact-section #contact-form .form-element button {
+    border-radius: 1px;
+    border: 1px solid #e69c00;
+    padding: 10px;
+    font-size: 15px;
+    margin: 0 auto;
+    text-decoration: underline;
+    background-color: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    color: #e69c00; }
+    #contact-section #contact-form .form-element button:hover {
+      color: #fff;
+      background-color: #e69c00; }
 
 #about-content img {
   height: 200px;
@@ -204,4 +251,8 @@ footer {
   h2#subtitle {
     font-size: 1rem; }
   #example-stock-photos #three-images .individual-image {
-    height: 20vh; } }
+    height: 20vh; }
+  #contact-form .form-element {
+    flex-wrap: wrap; }
+    #contact-form .form-element label {
+      flex-basis: 90% !important; } }
