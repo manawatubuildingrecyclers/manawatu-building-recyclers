@@ -140,6 +140,12 @@ section {
     margin: 20px 0; }
     #contact-section #contact-content #contact-text .contact-element p {
       margin: 1px; }
+      #contact-section #contact-content #contact-text .contact-element p#primary-phone {
+        font-weight: bold;
+        font-size: 1rem; }
+      #contact-section #contact-content #contact-text .contact-element p#secondary-phone {
+        font-size: 0.8rem;
+        margin-bottom: 5px; }
   #contact-section #contact-content iframe {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
 

@@ -181,8 +181,16 @@ section {
 			.contact-element {
 				margin: 20px 0;
 				p {
-					margin: 1px;
-				}
+                    margin: 1px;
+                    &#primary-phone {
+                        font-weight: bold;
+                        font-size: 1rem;
+                    }
+                    &#secondary-phone {
+                        font-size: 0.8rem;
+                        margin-bottom: 5px;
+                    }
+                }
 			}
 		}
 		iframe {
